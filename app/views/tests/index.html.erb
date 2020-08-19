@@ -1,0 +1,9 @@
+<main id='app'></main>
+
+<datalist id='names'>
+  <% @tests.each do |test| %>
+    <option><%= test.name %></option>
+  <% end %>
+</datalist>
+
+<%= javascript_pack_tag 'app' %>
