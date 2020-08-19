@@ -8,6 +8,7 @@ class TestsController < ApplicationController
       render :json => @test
     else
       @tests = Test.all
+      render :json => @tests
     end
   end
 
